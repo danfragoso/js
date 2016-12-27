@@ -1,3 +1,5 @@
+var cardSize = 400;
+
 var points = [],
     x, j,
     lines_length = 15,
@@ -21,14 +23,15 @@ function draw() {
     points.forEach(function(point){
         drawVectorFromPoint(point);
     })
+    fill(0,128,128, 20);
+    rect(width / 2 - cardSize / 2, height / 2 - cardSize / 2, cardSize, cardSize, 20);
 }
 
 function drawVectorFromPoint(anchorLocation){
     var mouse = createVector(mouseX, mouseY);
     var lineVector = p5.Vector.sub(mouse, anchorLocation);
     lineVector.setMag(lines_length);
-    strokeWeight(1);
-    //stroke(hue, 100, 100);
+    strokeWeight(3);
     stroke(0, 128, 128);
     line(anchorLocation.x,
         anchorLocation.y,
