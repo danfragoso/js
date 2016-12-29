@@ -10,6 +10,9 @@ function setup() {
   canvas.style('z-index', '-1');
   background(23,28,36);
 
+}
+
+function drawBg(){
   for (var i = 0; i  <  height ; i = i + 38){
    translate(22,0);
       for (var j = 0; j  <  width + 1;  j++){
@@ -20,8 +23,6 @@ function setup() {
       pop();
     }
   }
-
-
 }
 
 function makeHex(x, y, radius,r,g,b){
@@ -40,6 +41,7 @@ function makeHex(x, y, radius,r,g,b){
 
 function draw() {
 
+makeHex(mouseX,mouseY,25,29,34,123);
 
 
 
