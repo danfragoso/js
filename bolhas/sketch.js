@@ -1,10 +1,8 @@
-  var bolhas = [];
+var bolhas = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   }
-
-
 
 function mouseDragged(){
    if (mouseButton == LEFT){

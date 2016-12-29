@@ -1,6 +1,5 @@
 var canvas;
 
-
 var points = [],
     x, j,
     lines_length = 15,
@@ -25,17 +24,17 @@ function setup() {
 }
 
 function draw() {
-    background(255);
+  background(23,28,36);
+
     points.forEach(function(point){
         drawVectorFromPoint(point);
     })
     fill(0,128,128);
     //rect(width / 2 - 450 / 2, height / 2 - 400 / 2, 450, 400, 20);
     rect(0, height / 2 -180 / 2, windowWidth, 200);
-    
+
     //rect(width /2 -100 ,height - 20, 200 , 40,5);
-    
-  
+
 }
 
 function drawVectorFromPoint(anchorLocation){
