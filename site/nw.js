@@ -56,7 +56,7 @@ function draw() {
   size = random(3,22);
   quant = random(5,20);
   for (var i = 0; i < quant; i++){
-  ellipse(random(-20,20), random(40,100), size, size);
+  ellipse(random(-20,20), random(40,400), size, size);
 }
 	pop();
 }

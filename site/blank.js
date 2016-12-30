@@ -37,40 +37,16 @@ function draw() {
 
  background(23,28,36);
 
-//for (var i = 0; i < 3; i++){
-  //translate(- (width * 30) - 15,25);
-
-  for (var j = 0; j < width / 30; j++){
-  drawCube();
-  translate(30,10);
+for ( i = 0; i < height/90; i++){
+  for (var j = 0; j < (width / 30) + 1; j++){
+    drawCube();
+    translate(-15,35);
+    drawCube();
+    translate(45,-15);
   }
-//}
-
-translate(- (width * 30) - 15,25);
-drawCube();
-
-for (var d = 0; d < width / 30; d++){
-drawCube();
-translate(30,10);
+  translate(- (width + 30), 50);
 }
-
-
-
-//drawCube();
-
-
-/* drawCube();
- translate(30,10);
- drawCube();
- translate(30,10);
- drawCube();
- translate(-75,35);
- drawCube();
- translate(30,10);
- drawCube();
- translate(30,10);
- drawCube();
-*/
-
+  //translate(- (width + 30), 50);
+  //drawCube();
 
 }
